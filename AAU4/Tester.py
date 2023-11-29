@@ -64,5 +64,5 @@ ax2.get_xaxis().set_major_locator(plt.MaxNLocator(nbins=8))  # Mostrar hasta 8 f
 for i, txt in enumerate(parents_by_date['count']):
     ax2.annotate(txt, (parents_by_date['record_date'].iloc[i], txt), textcoords="offset points", xytext=(0, 5), ha='center')
 
-plt.tight_layout(rect=[0, 0.01, 0.5, 1.6])  # Ajustar el espacio en la parte superior y alrededor de la figura
+plt.tight_layout(rect=[0, 0.01, 0.5, 0.9])  # Ajustar el espacio en la parte superior y alrededor de la figura
 plt.show()
